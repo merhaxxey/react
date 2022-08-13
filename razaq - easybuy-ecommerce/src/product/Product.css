@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400&display=swap');
+
+.product-directory-links{
+    padding: 8px 7px;
+    padding-left: 78px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(170, 170, 196, 0.15);
+    font-size: 0.8em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.product-directory-links li{
+    /* display: flex;
+    flex-direction: column; */
+    margin: 0 5px;
+}
+.product-directory-links li .icon{
+    color: rgba(0, 0, 0, 0.5);
+}
+.product-directory-links li a{
+    color: rgba(0, 0, 0, .7);
+}
+
+.product-information{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 25px;
+    padding-left: 80px;
+}
+.product-information .image-viewer{
+    width: max-content;
+}
+.product-information .image-viewer img{
+    width: 480px;
+    height: 480px;
+    border-radius: 7px;
+
+}
+.product-information .image-viewer .image-list{
+    margin-top: 20px;
+    display: block;
+}
+.product-information .image-viewer .image-list img{
+    width: 70px;
+    height: 70px;
+}
+
+/* --------- Product information ------------ */
+.product-info-wrapper{
+    box-shadow: .5px .5px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 0;
+    margin-left: 30px;
+}
+.product-info{
+    margin-left: 0;
+    font-family: 'Mukta', sans-serif;
+
+    padding: 16px;
+    width: 400px;
+    /* box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); */
+}
+.product-info .product-brand{
+    text-decoration: underline;
+    font-weight: 200;
+    font-size: 1.0em;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 8px;
+}
+.product-info .product-name{    
+    font-weight: 500;
+    font-size: 1.32em;
+    width: 100%;
+    line-height: 1.2em;
+    margin-top: 0;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    word-break:break-all;
+    word-spacing: 2px;
+}
+.product-info .rating-wrapper .stars-wrapper{
+    display: inline-block;
+}
+
+.rating-wrapper .stars-wrapper .star{
+    display: inline-block;
+    font-size: 0.7em;
+    margin: 0 .7px;
+}
+.rating-wrapper .stars-wrapper  .first-star{
+    margin-left: 0;
+}
+.rating-wrapper .stars-wrapper  .last-star{
+    margin-right: 0;
+}
+.rating-wrapper{
+    margin-top: 10px;
+}
+.rating-wrapper .others{
+    font-size: 0.85em;
+    margin: 0 2px;
+    font-weight: 200;
+}
+
+.prices-wrapper #price-discount-id{
+    display: inline-block;
+    font-size: 1.75em;
+}
+.prices-wrapper #naira-sign1{
+    font-size: 0.45em;
+}
+.prices-wrapper #naira-sign2{
+    font-size: 0.25em;
+}
+.price-discount{
+
+}
+.product-info .prices-wrapper{
+    margin-top: 0;
+}
+
+.product-info .prices-wrapper .price{
+    display: inline-block;
+    text-decoration: line-through;
+    opacity: 0.6;
+    margin: 0 7px;
+    font-weight: 200;
+}
+.discount-rate{
+    color: red;
+    font-weight: 200;
+
+}
+#quantity-wrapper-id {
+    margin-top: 20px;
+    font-weight: 200;
+}
+#quantity-wrapper-id .title{
+    font-size: 0.9em;
+    font-weight: 200;
+    margin-top: 0;
+}
+.quantity-control-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.quantity-control-wrapper button{
+    border: 0;
+    border-radius: 20px;
+    width: 28px;
+    height: 28px;
+}
+.quantity-control-wrapper input{
+    width: 24px;
+    margin: 0 3px;
+    border: 0;
+    text-align: center;
+}
+.quantity-control-wrapper button .icon{
+    border: 0;
+    font-size: 0.9em;
+    height: 100%;
+}
+.quantity-control-wrapper .quantity-left{
+    font-size: 400;
+    font-size: 0.9em;
+    margin-left: 10px;
+    color: rgb(224, 59, 17)
+}
+
+.product-purchase-buttons{
+    margin-top: 14px;
+}
+.product-purchase-buttons .buy-button, .product-purchase-buttons .cart-button{
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    padding: 8px 8px;
+    width: 150px;
+    border: 0;
+    color: white;
+    border-radius: 30px;
+}
+.product-purchase-buttons .buy-button{
+    margin-right: 7px;
+    color: white;
+    background-color: var(--mainColor1);
+}
+.product-purchase-buttons .cart-button{
+    margin-left: 7px;
+    background-color: var(--mainColor2);
+}
+
+/* -------------------- delivery and return ------------------------ */
+.delivery-and-return{
+    margin-left: 0;
+    width: 400px;
+    padding: 16px;
+    font-family: 'Mukta', sans-serif;
+}
+.delivery-and-return{
+}
+.delivery-and-return .title{
+    font-size: 0.86em;
+    text-transform: uppercase;
+    /* font-weight: 100; */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+.delivery-and-return .article{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    font-weight: 200;
+}
+.delivery-and-return .article .icon-wrapper{
+    width: 22px;
+    height: 22px;
+    margin-top: 4px;
+    display: inline-block;
+}
+
+.article .icon-wrapper .icon{
+    margin-right: 14px;
+    font-weight: 200;
+    /* width: 100%;
+    height: 100%; */
+}
+.pickup-station  .icon{
+    font-size: 1em;
+}
+
+.sub-article b{
+    font-weight: 400;
+    font-size: 0.9em;
+    margin-bottom: 0;
+}
+.delivery-and-return .article{
+    margin: 9px 5px;
+}
+.sub-article p{
+    line-height: 19px;
+    font-weight: 200;
+    font-size: 0.9em;
+    margin: 0;
+}
+
+
+/* ---------------- seller information stylings ------------------ */
+.rightMostView-of-productInformation{
+    margin-left: 20px;
+}
+.seller-information{
+    width: 250px;
+    box-shadow: .1px .9px 2px rgba(0, 0, 0, .4);
+    border-radius: 5px;
+    font-family: 'Mukta', sans-serif;
+}
+.seller-information h3{
+    font-size: 0.95em;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    margin: 0;
+    font-weight: 500;
+    color: var(--mainColor1);
+    border-bottom: 0.5px solid rgba(0, 0, 0, .1);
+}
+.seller-information #seller-info-wrapper-id{
+    padding: 10px;
+    padding-top: 5px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, .1);
+}
+#seller-info-wrapper-id .seller-info{
+    display: inline-block;
+}
+#seller-info-wrapper-id .seller-info b{
+    font-size: .9em;
+    text-transform: capitalize;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+#seller-info-wrapper-id .seller-info p{
+    margin: 0;
+    font-size: 0.9em;
+    padding: 0;
+    height: 18px;
+    line-height: 18px;
+    font-weight: 300;
+}
+#seller-info-wrapper-id button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--mainColor1);
+    color: white;
+    padding: 5px 20px;
+    font-size: .97em;
+    margin-left: 40px;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: 0.2px 0.2px 1.5px rgba(0, 0, 0, 0.2);
+}
+
+/* seller performance */
+.seller-performance-wrapper{
+}
+.seller-performance-wrapper .title{
+    margin: 5px 10px;
+    font-size: 0.85em;
+    font-weight: 500;
+    height: 20px;
+    line-height: 20px;
+}
+.seller-performance{
+    display: flex;
+    height: 18px;
+    margin: 5px 0;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.seller-performance i{
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+}
+.seller-performance i .icon{
+    margin-top: 1px;
+    color: var(--mainColor1);
+    font-size: 1em;
+}
+.seller-performance p{
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    font-size: 0.81em;
+    font-weight: 300;
+}
+.seller-performance .grade{
+    margin-left: 5px;
+}
+
+/* ------------- other similar product ------------------ */
+.other-similar-products{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    margin-top: 15px;
+    font-family: 'Mukta' sans-serif;
+}
+.other-similar-products .title{
+    width: max-content;
+    font-weight: 200;
+    margin: 5px 0;
+    font-size: 0.85em;
+    text-transform: uppercase;
+}
+.other-similar-products a{
+    display: block;
+    border-radius: 4px;
+    width: 160px;
+    transition: box-shadow 200ms ease-in-out;
+    box-shadow: .06px .3px 2px rgba(0, 0, 0, .2);
+}
+.other-similar-products a:hover{
+    box-shadow: .6px 1.4px 12px rgba(0, 0, 0, .3);
+}
+.similar-product{
+    margin: 5px 0;
+}
+.similar-product img{
+    width: 100%;
+    height: 150px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.similar-product p{
+    height: 18px;
+    line-height: 18px;
+    margin: 0;
+    font-size: 0.95em;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
