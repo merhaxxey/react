@@ -1,0 +1,27 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+.home-route{
+    background-color: rgba(170, 170, 196, 0.15);
+}
+:root{
+    --mainColor1: rgb(83, 67, 221);
+    --mainColor2: rgb(247, 176, 23);
+    --logoHeight: 45px;
+    --logoWidth: 150px;
+}
+button{
+    margin: 0;
+}
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: black
+}
