@@ -1,0 +1,7 @@
+#category-page-id #name-id{
+    width: 100%;
+    overflow: visible;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    border: 1px solid black;
+}
